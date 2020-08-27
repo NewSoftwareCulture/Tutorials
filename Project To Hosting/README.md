@@ -1,7 +1,6 @@
 # Как перенести проект на хостинг? 
 
-> Ознакомиться: 
-
+> __Ознакомиться:__
 > https://github.com/isuvorov/notes/blob/master/ssh.md
 
 1) Зайти в панель хостинга и оформить новый сервер ubuntu 
@@ -43,9 +42,8 @@ ______________________________________
 > - Купить __домен__ и привязать в панели хостинга
 
 **Как запустить бота, чтоб он не падал при закрытии терминала?**
-> npm install pm2 -g
-
-> pm2-runtime npm -- start
+> - npm install pm2 -g
+> - pm2-runtime npm -- start
 
 **Как установить mongoDb на сервер? (Ubuntu 18.04)**
 > https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04-ru
