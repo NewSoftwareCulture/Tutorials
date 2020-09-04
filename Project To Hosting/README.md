@@ -31,6 +31,22 @@ __________________________________________________________________
 > ssh HOSTING_IP 'cd /root/projects/PROJECT_NAME && docker-compose pull && docker-compose up'
 
 ______________________________________
+
+**Для установки ноды определенной версии надо немного пошаманить:**
+
+> 1. Устанавливаем пакетный менеджер wget:
+ sudo apt install wget 
+> 2. Устанавливаем управление версиями ноды NVM:
+wget -qO-https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+> 3. Разрешаем доступ:
+source ~/.profile
+> 4. Чекаем список версий ноды:
+nvm ls-remote
+> 5. Ставим нужную версию ноды:
+nvm install 13.7.0
+
+______________________________________
+
 **Как до файлов на хостинге добраться?**
 > 1. Сгенерировать публичный ssh ключ 
 > 2. Привязать его к серверу
@@ -46,7 +62,8 @@ ______________________________________
 > - pm2-runtime npm -- start
 
 **Как установить mongoDb на сервер? (Ubuntu 18.04)**
-> https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04-ru
+> - mongodb://localhost:27017/PROJECT_NAME
+> - https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04-ru
 
 **Как добраться до админки на хостинге, зная IP сервера?**
 > https://IP:PORT/
