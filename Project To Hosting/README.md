@@ -35,13 +35,13 @@ ______________________________________
 **Для установки ноды определенной версии надо немного пошаманить:**
 
 > 1. Устанавливаем пакетный менеджер wget:
- sudo apt install wget 
+> sudo apt install wget 
 > 2. Устанавливаем управление версиями ноды NVM:
-wget -qO-https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+> wget -qO-https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 > 3. Разрешаем доступ:
-source ~/.profile
+> source ~/.profile
 > 4. Чекаем список версий ноды:
-nvm ls-remote
+> nvm ls-remote
 > 5. Ставим нужную версию ноды:
 nvm install 13.7.0
 
